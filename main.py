@@ -462,10 +462,10 @@ async def calc(interaction, problem: str):
         )
         return
     # Get the first number and operation from the message
-    number1 = float(words[0])
-    operation = words[1]
+    number1 = float(words[1])
+    operation = words[2]
     # Get the second number from the message
-    number2 = float(words[2])
+    number2 = float(words[3])
     # Perform the requested operation
 
     match operation:
