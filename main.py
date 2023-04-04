@@ -33,7 +33,7 @@ with open('server_settings.json', 'r') as file:
     server_settings = json.loads(file.read())
 
 # Define the amount of XP needed to level up
-level_up_xp = 50
+level_up_xp = (user_data[str(msg.author.id)]["level"] * 2) + 50
 
 #error handling
 
